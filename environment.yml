@@ -1,0 +1,24 @@
+name: p3dwm
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - pyyaml
+  - tqdm
+  - rich
+  - loguru
+  - pytest
+  - jupyter
+  - ipykernel
+  - pip:
+      - opencv-python
+      - open3d
+      - pyrealsense2
+      - hydra-core
+      - einops
