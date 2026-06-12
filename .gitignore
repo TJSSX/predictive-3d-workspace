@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Data and outputs
+data/
+outputs/
+logs/
+runs/
+wandb/
+
+# Large files
+*.mp4
+*.avi
+*.mkv
+*.bag
+*.npy
+*.npz
+*.pkl
+*.pt
+*.pth
+*.ckpt
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
