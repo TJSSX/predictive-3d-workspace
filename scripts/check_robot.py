@@ -1,5 +1,5 @@
 from lerobot.robots.so_follower import SO101Follower, SO101FollowerConfig
-
+from p3dwm.robot_state import RobotState
 
 def main() -> None:
     config = SO101FollowerConfig(
@@ -14,11 +14,13 @@ def main() -> None:
 
         observation = robot.get_observation()
 
+        robot_state = RobotState.from_observation(observation)
+
         print("Robot connected.")
         print("Observation:")
 
-        for key, value in observation.items():
-            print(f"  {key}: {value}")
+        for key, value in robot_state.to_dict().items():
+            print(f"  {key}: {value:.2f}")
 
     finally:
         robot.disconnect()
