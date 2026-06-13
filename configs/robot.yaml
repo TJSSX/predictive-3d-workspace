@@ -1,0 +1,15 @@
+robot:
+  type: so101_follower
+  port: COM4
+  id: p3dwm_follower
+
+teleoperator:
+  type: so101_leader
+  port: COM5
+  id: p3dwm_leader
+
+calibration:
+  follower:
+    path: C:/Users/26811/.cache/huggingface/lerobot/calibration/robots/so_follower/p3dwm_follower.json
+  leader:
+    path: C:/Users/26811/.cache/huggingface/lerobot/calibration/teleoperators/so_leader/p3dwm_leader.json
